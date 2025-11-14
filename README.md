@@ -3,6 +3,7 @@
 📊 **Overview**
 This project analyzes customer shopping behavior to uncover insights about spending patterns, demographics, and purchasing preferences.
 It demonstrates the complete data analytics workflow from cleaning and preparing data in Python, storing and analyzing it in PostgreSQL, to visualizing insights through Power BI and summarizing key findings in Gamma.
+<img width="1345" height="735" alt="image" src="https://github.com/user-attachments/assets/4d04bc46-88ed-4fc7-b5dc-f8e7356ead5c" />
 
 **📁 Dataset**
 
