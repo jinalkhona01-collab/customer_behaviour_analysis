@@ -1,11 +1,13 @@
-**Customer Shopping Behavior Analysis**
+# Customer Shopping Behavior Analysis
 
-📊 **Overview**
+## 📊 Overview
 This project analyzes customer shopping behavior to uncover insights about spending patterns, demographics, and purchasing preferences.
 It demonstrates the complete data analytics workflow from cleaning and preparing data in Python, storing and analyzing it in PostgreSQL, to visualizing insights through Power BI and summarizing key findings in Gamma.
 <img width="1345" height="735" alt="image" src="https://github.com/user-attachments/assets/4d04bc46-88ed-4fc7-b5dc-f8e7356ead5c" />
 
-**📁 Dataset**
+---
+
+## 📁 Dataset
 
 **Source:** Customer shopping behavior dataset (customer_shopping_behavior.csv)
 
@@ -17,7 +19,10 @@ It demonstrates the complete data analytics workflow from cleaning and preparing
 
 Customer_ID, Gender, Age, Category, Item_Purchased, Purchase_Amount, Review_Rating, Subscription_Status, Shipping_Type, etc.
 
-🧰 **Tools & Technologies**
+---
+
+## 🧰 Tools & Technologies
+
 | Tool                           | Purpose                                   |
 | ------------------------------ | ----------------------------------------- |
 | **Python (Pandas, NumPy)**     | Data loading, cleaning, and preprocessing |
@@ -27,64 +32,67 @@ Customer_ID, Gender, Age, Category, Item_Purchased, Purchase_Amount, Review_Rati
 | **Gamma**                      | Automated presentation of insights        |
 | **VS Code** | Development environment                   |
 
-⚙️ **Project Workflow**
+---
+
+## ⚙️ Project Workflow
+
 1. **Data Cleaning (Python)**
 
 **Script:** customer_shopping_behaviour.py
 
 **Key steps:**
 
-Load dataset using pandas
+- Load dataset using pandas
 
-Handle missing values (imputed median Review Rating by product category)
+- Handle missing values (imputed median Review Rating by product category)
 
-Rename columns to snake_case for consistency
+- Rename columns to snake_case for consistency
 
 **Create new fields:**
 
-age_group (Young Adult, Adult, Middle Aged, Senior)
+- age_group (Young Adult, Adult, Middle Aged, Senior)
 
-purchase_frequency_days (mapped from text frequency)
+- purchase_frequency_days (mapped from text frequency)
 
-Drop redundant columns (promo_code_used)
+- Drop redundant columns (promo_code_used)
 
-Export cleaned dataset for SQL upload
+- Export cleaned dataset for SQL upload
 
 **2. Database Integration (PostgreSQL)**
 
 **Script**: load_to_postgres.py
 
-Connection made via SQLAlchemy
+- Connection made via SQLAlchemy
 
-Credentials defined for PostgreSQL (username, password, host, port, database)
+- Credentials defined for PostgreSQL (username, password, host, port, database)
 
-Data uploaded into table: customer within database: customer_behaviour
+- Data uploaded into table: customer within database: customer_behaviour
 
 **3. SQL Analysis**
 
-File: customer_behaviour_SQL_queries.sql
+**File:** customer_behaviour_SQL_queries.sql
 
-Key analytical queries:
+- **Key analytical queries**:
 
-Revenue by Gender – Compare male vs. female customer revenue
+- Revenue by Gender – Compare male vs. female customer revenue
 
-Discount Usage vs. Spending – Identify customers who used discounts but spent above average
+- Discount Usage vs. Spending – Identify customers who used discounts but spent above average
 
-Top Rated Products – Top 5 products by average review rating
+- Top Rated Products – Top 5 products by average review rating
 
-Shipping Type Comparison – Compare average purchase amount for Standard vs. Express
+- Shipping Type Comparison – Compare average purchase amount for Standard vs. Express
 
-Subscriber Analysis – Compare total revenue and average spend of subscribers vs. non-subscribers
+- Subscriber Analysis – Compare total revenue and average spend of subscribers vs. non-subscribers
 
-Discount Rate by Product – Identify products most often purchased with discounts
+- Discount Rate by Product – Identify products most often purchased with discounts
 
-Customer Segmentation – Segment customers into New, Returning, and Loyal
+- Customer Segmentation – Segment customers into New, Returning, and Loyal
 
-Top Products per Category – Find top 3 purchased products within each category
+- Top Products per Category – Find top 3 purchased products within each category
 
-Repeat Buyers & Subscription – Analyze subscription rates among repeat buyers
+- Repeat Buyers & Subscription – Analyze subscription rates among repeat buyers
 
-Revenue by Age Group – Compare spending across customer age groups
+- Revenue by Age Group – Compare spending across customer age groups
 
 **4. Dashboard (Power BI)**
 
@@ -100,39 +108,45 @@ Included visuals from Power BI and highlights from SQL results
 
 Structured for storytelling and executive reporting
 
-**📈 Key Insights**
+---
 
-Female customers generated slightly higher total revenue than males.
+## 📈 Key Insights
 
-Discounted purchases often came from high-value customers, indicating effective promotional impact.
+- Female customers generated slightly higher total revenue than males.
 
-Express shipping customers showed higher spending behavior.
+- Discounted purchases often came from high-value customers, indicating effective promotional impact.
 
-Loyal customers (10+ purchases) contributed the largest share of total revenue.
+- Express shipping customers showed higher spending behavior.
 
-Adults and Middle-Aged groups were the highest-spending segments.
+- Loyal customers (10+ purchases) contributed the largest share of total revenue.
 
-**💡 Business Recommendations**
+- Adults and Middle-Aged groups were the highest-spending segments.
 
-**Targeted Promotions:**
+---
+
+## 💡 Business Recommendations
+
+- **Targeted Promotions:**
 Continue offering targeted discounts to high-value and loyal customers — they respond positively without hurting revenue.
 
-**Subscription Program Expansion:**
+- **Subscription Program Expansion:**
 Subscribers spend more on average; increasing incentives for non-subscribers could boost long-term retention.
 
-**Shipping Strategy Optimization:**
+- **Shipping Strategy Optimization:**
 Since express shipping users tend to spend more, bundle express delivery with premium loyalty plans to drive upselling.
 
-**Product Focus:**
+- **Product Focus:**
 Prioritize inventory and marketing around top-rated and frequently purchased products to maximize profitability.
 
-**Customer Segmentation Marketing:**
+- **Customer Segmentation Marketing:**
 Create separate campaigns for New, Returning, and Loyal customers to improve engagement and conversion rates.
 
-**Age-Based Personalization:**
+- **Age-Based Personalization:**
 Tailor marketing strategies to Adult and Middle-Aged customers — the two groups driving most of the revenue.
 
-**🚀 How to Run**
+---
+
+## 🚀 How to Run
 
 1. Clone Repository
    
@@ -165,10 +179,15 @@ Open customer_dashboard.pbix in Power BI.
 
 Access the Gamma presentation - open Customer-Shopping-Behavior-Analysis.pptx.
 
-**📬 Contact**
+---
 
-Author: Jinal Khona
+## About Me
+Hi there! I'm ***Jinal Mahesh Khona***. I’m on a mission to share and gain knowledge and make working with data enjoyable and engaging!
 
-LinkedIn: www.linkedin.com/in/jinal-khona-84835523a
+## ☕ Stay Connected
+
+Let's stay in touch! Feel free to connect with me on
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)][(https://www.linkedin.com/in/jinal-khona-84835523a/)]
 
 Email: jinal.khona01@gmail.com
